@@ -9,9 +9,10 @@ describe('App', () => {
   });
 });
 
-describe('App', () => {
-  it('should render a <div />', () => {
+describe('Button', () => {
+  it('should render start and pause', () => {
     const container = shallow(<Timer />);
-    expect(container.find('div').length).toEqual(3);
+    expect(container.find('button').render)
   });
 });
+
